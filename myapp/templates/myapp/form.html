@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Contact Details</h1>
+
+        <div class="frm">
+            <form method="POST" >
+                {% csrf_token%}
+                <label>Name
+                    <input type="text" name="Name">
+                </label><br><br>
+                <label>Email
+                    <input type="Email" name="Email">
+                </label><br><br>
+                <label>Phone
+                    <input type="text" name="Phone">
+                </label><br><br>
+                <label>Wesbiste
+                    <input type="text" name="Wesbiste">
+                </label><br><br>
+                <label>Message
+                    <textarea>
+                    <input type="text" name="Message">
+                    </textarea>
+                </label><br><br>
+                <Button type="submit">submit</button>
+            </form>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
